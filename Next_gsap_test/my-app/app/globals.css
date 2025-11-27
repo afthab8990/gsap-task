@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: system-ui;
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html{
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.pics{
+  position: absolute;
+}
+
+.pics img{
+  width: 100px;
+  height: 100px;
+}
+
+.pics img:nth-child(1) {
+          top: 10%;
+          left: 5%;
+        }
+        .pics img:nth-child(2) {
+          top: 15%;
+          right: 8%;
+        }
+        .pics img:nth-child(3) {
+          bottom: 20%;
+          left: 10%;
+        }
+        .pics img:nth-child(4) {
+          bottom: 15%;
+          right: 5%;
+        }
+        .pics img:nth-child(5) {
+          top: 50%;
+          left: 15%;
+          transform: translateY(-50%);
+        }
+        .pics img:nth-child(6) {
+          top: 50%;
+          right: 12%;
+          transform: translateY(-50%);
+        }
+
+@media (max-width: 768px) {
+  .pics img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .pics img:nth-child(1) {
+    top: 5%;
+    left: 2%;
+  }
+  .pics img:nth-child(2) {
+    top: 10%;
+    right: 3%;
+  }
+  .pics img:nth-child(3) {
+    bottom: 15%;
+    left: 5%;
+  }
+  .pics img:nth-child(4) {
+    bottom: 10%;
+    right: 2%;
+  }
+  .pics img:nth-child(5) {
+    visibility : hidden;
+
+  }
+  .pics img:nth-child(6) {
+    visibility : hidden;
+
+  }
+}
