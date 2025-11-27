@@ -5,7 +5,9 @@
 1. **Clone the repository**
    ```bash
    git clone https://github.com/afthab8990/gsap-task.git
-   cd gsap-task/Next_gsap_task/my-app
+   cd gsap-task
+   cd Next_gsap_task
+   cd my-app
    ```
 
 2. **Install dependencies**
